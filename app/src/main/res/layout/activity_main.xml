@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/buttonLayer"
+        android:layout_width="376dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="40dp"
+
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/festLayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/screen_background_light" />
+
+    <ImageView
+        android:id="@+id/topLayer"
+        android:layout_width="357dp"
+        android:layout_height="362dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mainlayer" />
+
+    <ImageButton
+        android:id="@+id/birthday"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:contentDescription="@string/todo"
+        android:onClick="birthDay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/bir" />
+
+    <ImageButton
+        android:id="@+id/anniversary"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:contentDescription="@string/todo"
+        android:onClick="anniversary"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/birthday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/bikku" />
+
+    <ImageButton
+        android:id="@+id/achivement"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:contentDescription="@string/todo"
+        android:onClick="achive"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLayer"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toEndOf="@+id/anniversary"
+        app:layout_constraintTop_toTopOf="@+id/buttonLayer"
+        app:layout_constraintVertical_bias="0.206"
+        app:srcCompat="@drawable/cong" />
+
+    <ImageButton
+        android:id="@+id/congrats"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:contentDescription="@string/todo"
+        android:onClick="congrats"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLayer"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toEndOf="@+id/achivement"
+        app:layout_constraintTop_toTopOf="@+id/buttonLayer"
+        app:layout_constraintVertical_bias="0.206"
+        app:srcCompat="@drawable/achi" />
+
+    <TextView
+        android:id="@+id/birthdayText"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/birthday"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#175FCA"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toStartOf="@+id/anniversaryText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonLayer"
+        app:layout_constraintTop_toBottomOf="@id/anniversary"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/anniversaryText"
+        android:layout_width="82dp"
+        android:layout_height="23dp"
+        android:text="@string/anniversary1"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#175FCA"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLayer"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anniversary"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/yearcompleteText"
+        android:layout_width="75dp"
+        android:layout_height="24dp"
+        android:text="@string/achivement"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#175FCA"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toStartOf="@+id/congratsText"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/anniversaryText"
+        app:layout_constraintTop_toBottomOf="@+id/achivement"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <TextView
+        android:id="@+id/congratsText"
+        android:layout_width="80dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/congratulation"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#175FCA"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLayer"
+        app:layout_constraintTop_toBottomOf="@+id/congrats"
+        app:layout_constraintVertical_bias="0.377" />
+
+    <TextView
+        android:id="@+id/toptextdes"
+        android:layout_width="195dp"
+        android:layout_height="104dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/topText"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#F0F1F3"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <TextView
+        android:id="@+id/topHeading1"
+        android:layout_width="237dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/important_days"
+        android:textAllCaps="true"
+        android:textColor="#0A75CA"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/topHeading2"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/wish_them"
+        android:textAllCaps="true"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/toptextdes"
+        app:layout_constraintEnd_toEndOf="@+id/topLayer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topHeading1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/coiny"
+        android:text="@string/greetings"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toptextdes"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/festLayer"
+        android:layout_width="376dp"
+        android:layout_height="261dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/spinner_background" />
+
+    <TextView
+        android:id="@+id/diwaliText"
+        android:layout_width="65dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/diwali"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B61F3"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/textHoli"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/festLayer"
+        app:layout_constraintTop_toTopOf="@+id/festLayer" />
+
+    <TextView
+        android:id="@+id/textHoli"
+        android:layout_width="63dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
+        android:text="@string/holi"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B61F3"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/festLayer"
+        app:layout_constraintTop_toTopOf="@+id/festLayer" />
+
+    <TextView
+        android:id="@+id/textChristmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/christmas"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B61F3"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/festLayer"
+        app:layout_constraintEnd_toStartOf="@+id/textNewYear"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/festLayer"
+        app:layout_constraintTop_toBottomOf="@+id/diwaliText"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/textNewYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_year"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B61F3"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/festLayer"
+        app:layout_constraintEnd_toEndOf="@+id/festLayer"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHoli"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="122dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/coiny"
+        android:text="@string/festivals"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/festLayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLayer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/devButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/developer_details"
+        android:textColor="#5208D6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/festLayer"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton13"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="@+id/festLayer"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.737"
+        app:srcCompat="@drawable/d"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton14"
+        app:layout_constraintEnd_toEndOf="@+id/festLayer"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.737"
+        app:srcCompat="@drawable/h"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/devButton"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton14"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="@+id/festLayer"
+        app:srcCompat="@drawable/cm"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/devButton"
+        app:layout_constraintEnd_toEndOf="@+id/festLayer"
+        app:srcCompat="@drawable/ny"
+        android:contentDescription="@string/todo" />
+
+</android.support.constraint.ConstraintLayout>

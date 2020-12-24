@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Greet</string>
+
+
+    <string name="birthday">Birthday</string>
+    <string name="anniversary">ANNIVERSARY</string>
+    <string name="new_year">NEW YEAR</string>
+    <string name="diwali">DIWALI</string>
+    <string name="holi">HOLI</string>
+    <string name="christmas">CHRISTMAS</string>
+    <string name="dev_basera">DEV - BASERA</string>
+    <string name="enter_name">ENTER NAME</string>
+    <string name="sumit">sumit</string>
+    <string name="name">Name</string>
+    <string name="todo">TODO</string>
+    <string name="husband_s_name">husband\'s name</string>
+    <string name="wife_s_name">wife\'s name</string>
+    <string name="year_number">which year?</string>
+    <string name="year_s">YEAR(S)</string>
+    <string name="push">PUSH</string>
+    <string name="todo21">TODO</string>
+    <string name="topText">Greeting your loved ones like never before \'show them how you feel for their special days\' with GREET</string>
+    <string name="achivement">Achivement</string>
+    <string name="congratulation">Congratulation</string>
+    <string name="important_days">important days ?</string>
+    <string name="wish_them">wish them</string>
+
+    <string name="greetings">Greetings</string>
+    <string name="anniversary1">Anniversary</string>
+    <string name="festivals">Festivals</string>
+    <string name="developer_details">Developer details</string>
+
+    <string name="button">Button</string>
+    <string name="year">YEAR</string>
+    <string name="push1">Push</string>
+    <string name="_10">10</string>
+    <string name="congrats_for">Congrats For</string>
+    <string name="winning_today_s_football_match">Winning Today\'s Football Match.</string>
+    <string name="pushAgain">Push</string>
+
+
+
+</resources>
